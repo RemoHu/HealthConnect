@@ -91,11 +91,11 @@
 									}
 
 									if ( get_theme_mod( 'medica_lite_general_socialslink_youtubelink', 'http://www.youtube.com' ) ) {
-										echo '<li class="footer-youtube-icon"><a href="'. esc_url( get_theme_mod( 'medica_lite_general_socialslink_youtubelink', 'http://www.youtube.com' ) ) .'" title="'. __( 'YouTube', 'medica-lite' ) .'" target="_blank"></a></li>';
+										echo '<li class="footer-youtube-icon"><a href="'. esc_url( get_theme_mod( 'medica_lite_general_socialslink_youtubelink', 'http://www.youtube.com' ) ) .'" title="'. __( 'Tumblr', 'medica-lite' ) .'" target="_blank"></a></li>';
 									}
 
 									if ( get_theme_mod( 'medica_lite_general_socialslink_linkedinlink', 'http://www.linkedin.com' ) ) {
-										echo '<li class="footer-linkedin-icon"><a href="'. esc_url( get_theme_mod( 'medica_lite_general_socialslink_linkedinlink', 'http://www.linkedin.com' ) ) .'" title="'. __( 'LinkedIn', 'medica-lite' ) .'" target="_blank"></a></li>';
+										echo '<li class="footer-linkedin-icon"><a href="'. esc_url( get_theme_mod( 'medica_lite_general_socialslink_linkedinlink', 'http://www.linkedin.com' ) ) .'" title="'. __( 'Instagram', 'medica-lite' ) .'" target="_blank"></a></li>';
 									}
 									?>
 								</ul>
@@ -105,7 +105,9 @@
 			</div><!--/div .wrapper-->
 			<div class="copyright-name">
 				<div class="wrapper">
-					<?php echo htmlspecialchars_decode( get_theme_mod( 'medica_lite_general_footer_copyrightentry', 'Copyright' ) ); ?> &copy; <a href="https://themeisle.com/themes/medica-lite/" target="_blank" rel="nofollow"><?php _e( 'Medica Lite', 'medica-lite' ); ?></a> <?php _e('Proudly powered by','medica-lite'); ?> <a href="http://www.wordpress.org" title="WordPress" target="_blank"><?php _e('WordPress','medica-lite'); ?></a>.
+					<?php echo htmlspecialchars_decode( get_theme_mod( 'medica_lite_general_footer_copyrightentry', 'Copyright' ) ); ?> &copy; <a href="#" target="_blank" rel="nofollow"><?php _e( 'RaasoTech', 'medica-lite' ); ?></a> .
+					&nbsp;&nbsp;<a href="http://health-connect-dev.australiasoutheast.cloudapp.azure.com/wordpress/privacy.html" target="_blank" rel="nofollow">Privacy</a>
+					&nbsp;&nbsp;<a href="http://health-connect-dev.australiasoutheast.cloudapp.azure.com/wordpress/terms.html" target="_blank" rel="nofollow">Terms of Use</a>
 				</div><!--/div .wrapper-->
 			</div><!-- /div .copyright-name -->
 		</footer><!--/footer #footer-->

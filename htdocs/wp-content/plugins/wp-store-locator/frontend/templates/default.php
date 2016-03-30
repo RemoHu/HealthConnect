@@ -41,7 +41,7 @@ if ( $wpsl_settings['category_filter'] ) {
     $output .= $this->create_category_filter();
 }
 
-$output .= "\t\t\t\t" . '<div class="wpsl-search-btn-wrap" style="margin-top: 32px;"><input id="wpsl-search-btn" type="submit" value="' . esc_attr( $wpsl->i18n->get_translation( 'search_btn_label', __( 'Search', 'wpsl' ) ) ) . '"></div>' . "\r\n";
+$output .= "\t\t\t\t" . '<div class="wpsl-search-btn-wrap" style="margin-top: 1px;"><input id="wpsl-search-btn" type="submit" value="' . esc_attr( $wpsl->i18n->get_translation( 'search_btn_label', __( 'Search', 'wpsl' ) ) ) . '"></div>' . "\r\n";
 
 $output .= "\t\t" . '</form>' . "\r\n";
 $output .= "\t\t" . '</div>' . "\r\n";

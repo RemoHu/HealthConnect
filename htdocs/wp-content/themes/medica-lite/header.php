@@ -35,17 +35,25 @@
 							</a><!--/a .logo-->
 							<div class="header-contact">
 								<?php
-								if ( get_theme_mod( 'medica_lite_general_contactinfo_telephonetitle', 'Telephone' ) ) {
+								/*if ( get_theme_mod( 'medica_lite_general_contactinfo_telephonetitle', 'Telephone' ) ) {
 									echo esc_attr( get_theme_mod( 'medica_lite_general_contactinfo_telephonetitle', 'Telephone' ) ) . '<br />';
 								} else {
 									echo '<br />';
+								} */
+								
+								if (is_user_logged_in ()){
+									echo '<a style="font-size:14px" href="http://health-connect-dev.australiasoutheast.cloudapp.azure.com/wordpress/logout">Log Out</a>';
+								}
+								else{
+									echo '<a style="font-size:14px" href="http://health-connect-dev.australiasoutheast.cloudapp.azure.com/wordpress/login">Log In</a>';
+									echo '<a style="font-size:14px" href="http://health-connect-dev.australiasoutheast.cloudapp.azure.com/wordpress/register">Register</a>'; 
 								}
 
-								if ( get_theme_mod( 'medica_lite_general_contactinfo_telephonenumber', '+1 223 456 23' ) ) {
+								/* if ( get_theme_mod( 'medica_lite_general_contactinfo_telephonenumber', '+1 223 456 23' ) ) {
 									echo '<a href="tel:'. esc_attr( get_theme_mod( 'medica_lite_general_contactinfo_telephonenumber', '+1 223 456 23' ) ) .'" title="'. esc_attr( get_theme_mod( 'medica_lite_general_contactinfo_telephonetitle', 'Telephone' ) ) .'"><i class="icon-phone"></i> '. get_theme_mod( 'medica_lite_general_contactinfo_telephonenumber', '+1 223 456 23' ) .'</a>';
 								} else {
 									echo '<div style="margin-top: 24px;"></div>';
-								}
+								} */
 								?>
 								<ul class="cf">
 									<?php
@@ -58,11 +66,11 @@
 									}
 
 									if ( get_theme_mod( 'medica_lite_general_socialslink_youtubelink', 'http://www.youtube.com' ) ) {
-										echo '<li class="header-youtube-icon"><a href="'. esc_url( get_theme_mod( 'medica_lite_general_socialslink_youtubelink', 'http://www.youtube.com' ) ) .'" title="'. __( 'YouTube', 'medica-lite' ) .'" target="_blank"></a></li>';
+										echo '<li class="header-youtube-icon"><a href="'. esc_url( get_theme_mod( 'medica_lite_general_socialslink_youtubelink', 'http://www.youtube.com' ) ) .'" title="'. __( 'Tumblr', 'medica-lite' ) .'" target="_blank"></a></li>';
 									}
 
 									if ( get_theme_mod( 'medica_lite_general_socialslink_linkedinlink', 'http://www.linkedin.com' ) ) {
-										echo '<li class="header-linkedin-icon"><a href="'. esc_url( get_theme_mod( 'medica_lite_general_socialslink_linkedinlink', 'http://www.linkedin.com' ) ) .'" title="'. __( 'LinkedIn', 'medica-lite' ) .'" target="_blank"></a></li>';
+										echo '<li class="header-linkedin-icon"><a href="'. esc_url( get_theme_mod( 'medica_lite_general_socialslink_linkedinlink', 'http://www.linkedin.com' ) ) .'" title="'. __( 'Instagram', 'medica-lite' ) .'" target="_blank"></a></li>';
 									}
 									?>
 								</ul>
