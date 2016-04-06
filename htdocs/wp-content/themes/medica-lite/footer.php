@@ -34,13 +34,13 @@
 
 				<div class="footer-box">
 					<?php
-					if ( get_theme_mod( 'medica_lite_general_footer_menutitle', 'Menu' ) ) {
+					/* if ( get_theme_mod( 'medica_lite_general_footer_menutitle', 'Menu' ) ) {
 						echo '<div class="footer-box-title">'. esc_attr( get_theme_mod( 'medica_lite_general_footer_menutitle', 'Menu' ) ) .'</div>';
-					}
+					} */
 					?>
 					<div class="footer-box-entry">
 							<?php
-							if ( has_nav_menu( 'footer-navigation' ) ) {
+							/* if ( has_nav_menu( 'footer-navigation' ) ) {
 
 								wp_nav_menu( array(
 										'theme_location'	=> 'footer-navigation',
@@ -58,7 +58,7 @@
 								);
 								echo '</ul>';
 
-							}
+							} */
 							?>
 					</div><!--/div .footer-box-entry-->
 				</div><!--/div .footer-box-->
@@ -82,7 +82,7 @@
 								?>
 								<ul class="cf">
 									<?php
-									if ( get_theme_mod( 'medica_lite_general_socialslink_facebooklink', 'http://www.facebook.com' ) ) {
+									/* if ( get_theme_mod( 'medica_lite_general_socialslink_facebooklink', 'http://www.facebook.com' ) ) {
 										echo '<li class="footer-facebook-icon"><a href="'. esc_url( get_theme_mod( 'medica_lite_general_socialslink_facebooklink', 'http://www.facebook.com' ) ) .'" title="'. __( 'Facebook', 'medica-lite' ) .'" target="_blank"></a></li>';
 									}
 
@@ -96,7 +96,7 @@
 
 									if ( get_theme_mod( 'medica_lite_general_socialslink_linkedinlink', 'http://www.linkedin.com' ) ) {
 										echo '<li class="footer-linkedin-icon"><a href="'. esc_url( get_theme_mod( 'medica_lite_general_socialslink_linkedinlink', 'http://www.linkedin.com' ) ) .'" title="'. __( 'Instagram', 'medica-lite' ) .'" target="_blank"></a></li>';
-									}
+									} */
 									?>
 								</ul>
 						</div><!--/div .header-contact-->
@@ -105,7 +105,7 @@
 			</div><!--/div .wrapper-->
 			<div class="copyright-name">
 				<div class="wrapper">
-					<?php echo htmlspecialchars_decode( get_theme_mod( 'medica_lite_general_footer_copyrightentry', 'Copyright' ) ); ?> &copy; <a href="#" target="_blank" rel="nofollow"><?php _e( 'RaasoTech', 'medica-lite' ); ?></a> .
+					<?php echo htmlspecialchars_decode( get_theme_mod( 'medica_lite_general_footer_copyrightentry', 'Copyright' ) ); ?> &copy; 2016&nbsp;<a href="#" target="_blank" rel="nofollow"><?php _e( 'RaasoTech', 'medica-lite' ); ?></a> .
 					&nbsp;&nbsp;<a href="http://health-connect-dev.australiasoutheast.cloudapp.azure.com/wordpress/privacy.html" target="_blank" rel="nofollow">Privacy</a>
 					&nbsp;&nbsp;<a href="http://health-connect-dev.australiasoutheast.cloudapp.azure.com/wordpress/terms.html" target="_blank" rel="nofollow">Terms of Use</a>
 				</div><!--/div .wrapper-->

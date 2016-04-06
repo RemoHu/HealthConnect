@@ -11,7 +11,7 @@
 					<h3>
 						<?php
 						if ( get_theme_mod( 'medica_lite_404_title', '404 ERROR' ) ) {
-							echo esc_attr( get_theme_mod( 'medica_lite_404_title', '404 ERROR' ) );
+							echo esc_attr( get_theme_mod( 'medica_lite_404_title', 'Page Not Found' ) );
 						}
 						?>
 					</h3><!--/h3-->
@@ -38,7 +38,7 @@
 						</div><!--/div .post-excerpt-->
 					</div><!--/div .post-->
 				</div><!--/div #posts-->
-				<?php get_sidebar(); ?>
+				
 			</div><!--/div .wrapper-->
 		</section><!--/section #content-->
 		<?php get_footer(); ?>

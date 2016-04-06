@@ -705,7 +705,7 @@ body.custom-background {
 /* 1.6 Content */
 #content {
   width: 100%;
-  padding: 60px 0px;
+  padding: 30px 0px;
   float: left;
 }
 #content #latest-news {
@@ -1407,13 +1407,13 @@ body.custom-background {
 #footer {
   width: 100%;
   background: #202020;
-  padding: 60px 0px 0px 0px;
+  padding: 10px 0px 0px 0px;
   border-top: 8px solid #42b3e5;
   float: left;
 }
 #footer .footer-box {
   float: left;
-  margin-bottom: 79px;
+  margin-bottom: 0px;
 }
 #footer .footer-box:nth-child(1) {
   width: 315px;
@@ -1435,7 +1435,7 @@ body.custom-background {
 }
 #footer .footer-box .footer-box-entry {
   width: 100%;
-  margin-top: 18px;
+  margin-top: 0px;
   line-height: 24px;
   color: #fff;
   font-size: 16px;
@@ -1652,7 +1652,6 @@ body.custom-background {
 }
 #posts .post a {
   color: #42b3e5;
-  text-decoration: underline;
 }
 #posts .post a:hover {
   text-decoration: none;
