@@ -292,7 +292,11 @@
 						</ul> <!-- /ul -->
 						<?php
 						if ( get_theme_mod( 'medica_lite_frontpage_features_buttontext', 'Buy Now' ) ) {
-							echo '<a href="'. esc_url( get_theme_mod( 'medica_lite_frontpage_features_buttonlink', '#' ) ) .'" title="'. esc_attr( get_theme_mod( 'medica_lite_frontpage_features_buttontext', 'Buy Now' ) ) .'" id="view-more">'. esc_attr( get_theme_mod( 'medica_lite_frontpage_features_buttontext', 'Buy Now' ) ) .'</a>';
+							
+							// If use logged in, Hidden the register button
+							if (!is_user_logged_in ()){
+								echo '<a href="'. esc_url( get_theme_mod( 'medica_lite_frontpage_features_buttonlink', '#' ) ) .'" title="'. esc_attr( get_theme_mod( 'medica_lite_frontpage_features_buttontext', 'Buy Now' ) ) .'" id="view-more">'. esc_attr( get_theme_mod( 'medica_lite_frontpage_features_buttontext', 'Buy Now' ) ) .'</a>';
+							}
 						}
 						?>
 

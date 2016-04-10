@@ -14,25 +14,29 @@ if( !empty($instance['design']['hover']) ) $classes[] = 'ow-button-hover';
 	if(!empty($instance['attributes']['title'])) $button_attributes['title'] = esc_attr($instance['attributes']['title']);
 	if(!empty($instance['attributes']['onclick'])) $button_attributes['onclick'] = esc_attr($instance['attributes']['onclick']);
 	?>
-
-	<a <?php foreach($button_attributes as $name => $val) echo $name . '="' . $val . '" ' ?>>
-		<span>
-			<?php
-				if( !empty($instance['button_icon']['icon']) ) {
-					$attachment = wp_get_attachment_image_src($instance['button_icon']['icon']);
-					if(!empty($attachment)) {
-						$icon_styles[] = 'background-image: url(' . sow_esc_url($attachment[0]) . ')';
-						?><div class="sow-icon-image" style="<?php echo implode('; ', $icon_styles) ?>"></div><?php
+	
+	<?php 
+		if (!is_user_logged_in ()){
+	?>
+		<a <?php foreach($button_attributes as $name => $val) echo $name . '="' . $val . '" ' ?>>
+			<span>
+				<?php
+					if( !empty($instance['button_icon']['icon']) ) {
+						$attachment = wp_get_attachment_image_src($instance['button_icon']['icon']);
+						if(!empty($attachment)) {
+							$icon_styles[] = 'background-image: url(' . sow_esc_url($attachment[0]) . ')';
+							?><div class="sow-icon-image" style="<?php echo implode('; ', $icon_styles) ?>"></div><?php
+						}
 					}
-				}
-				else {
-					$icon_styles = array();
-					if(!empty($instance['button_icon']['icon_color'])) $icon_styles[] = 'color: '.$instance['button_icon']['icon_color'];
-					echo siteorigin_widget_get_icon($instance['button_icon']['icon_selected'], $icon_styles);
-				}
-			?>
+					else {
+						$icon_styles = array();
+						if(!empty($instance['button_icon']['icon_color'])) $icon_styles[] = 'color: '.$instance['button_icon']['icon_color'];
+						echo siteorigin_widget_get_icon($instance['button_icon']['icon_selected'], $icon_styles);
+					}
+				?>
 
-			<?php echo wp_kses_post($instance['text']) ?>
-		</span>
-	</a>
+				<?php echo wp_kses_post($instance['text']) ?>
+			</span>
+		</a>
+	<?php }?>
 </div>

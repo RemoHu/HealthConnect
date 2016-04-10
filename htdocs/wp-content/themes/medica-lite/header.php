@@ -44,29 +44,16 @@
 								} else {
 									echo '<br />';
 								} */
-								
-								/* if (is_user_logged_in ()){
-									$user=wp_get_current_user();
-									$name=$user->display_name;
-									echo 'Welcome, '.$name.'!<br>';
-									echo '<a style="font-size:14px" href="http://health-connect-dev.australiasoutheast.cloudapp.azure.com/wordpress/logout">Log Out</a>';
-								}
-								else{
-									echo '<a style="font-size:14px" href="http://health-connect-dev.australiasoutheast.cloudapp.azure.com/wordpress/login">Log In</a>';
-									echo '<a style="font-size:14px" href="http://health-connect-dev.australiasoutheast.cloudapp.azure.com/wordpress/register">Register</a>'; 
-								} */
-								
-								
-								
+
 								if (is_user_logged_in ()){
 									$user=wp_get_current_user();
 									$name=$user->display_name;
 									echo 'Welcome, '.$name.'!<br>';
-									echo '<a style="font-size:14px" href="http://health-connect-dev.australiasoutheast.cloudapp.azure.com/wordpress/logout">Log Out</a>';
+									echo '<a style="font-size:14px" href="./logout">Log Out</a>';
 								}
 								else{
-									echo '<a style="font-size:14px" href="http://health-connect-dev.australiasoutheast.cloudapp.azure.com/wordpress/membership-login/">Log In</a>';
-									echo '<a style="font-size:14px" href="http://health-connect-dev.australiasoutheast.cloudapp.azure.com/wordpress/membership-registration/">Register</a>'; 
+									echo '<a style="font-size:14px" href="./membership-login/">Log In</a>';
+									echo '<a style="font-size:14px" href="./membership-registration/">Register</a>'; 
 								}
 
 								/* if ( get_theme_mod( 'medica_lite_general_contactinfo_telephonenumber', '+1 223 456 23' ) ) {

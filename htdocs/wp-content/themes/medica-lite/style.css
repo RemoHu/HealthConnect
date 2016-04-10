@@ -1537,11 +1537,11 @@ body.custom-background {
   height: 38px;
   background: #000;
   line-height: 37px;
-  color: #636363;
+  color: #FFFFFF;
   font-family: Arial;
 }
 #footer .copyright-name a {
-  color: #636363;
+  color: #FFFFFF;
   text-decoration: underline;
 }
 #footer .copyright-name a:hover {
