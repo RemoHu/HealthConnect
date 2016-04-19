@@ -140,6 +140,15 @@ function medica_lite_html5shiv( $tag, $handle, $src ) {
 }
 add_filter( 'script_loader_tag', 'medica_lite_html5shiv', 10, 3 );
 
+function annointed_admin_bar_remove() {
+        global $wp_admin_bar;
+
+        /* Remove Logo */
+        $wp_admin_bar->remove_menu('wp-logo');
+}
+
+add_action('wp_before_admin_bar_render', 'annointed_admin_bar_remove', 0);
+
 
 function medica_header_style() {
 

@@ -145,6 +145,8 @@ class SwpmFrontRegistration extends SwpmRegistration {
         $wp_user_info['role'] = $wpdb->get_var($query);
         $wp_user_info['user_registered'] = date('Y-m-d H:i:s');
         SwpmUtils::create_wp_user($wp_user_info);
+		
+		
         return true;
     }
 

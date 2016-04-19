@@ -168,7 +168,7 @@ add_action('wp_head', function() {
 if( function_exists( 'buddypress' ) ) {
 	if( get_option('wpc_s_21') == 'on' || get_option('wpc_s_21') !== '' && get_option('wpc_s_21') !== 'on' ) {
 		if( is_numeric(bp_displayed_user_id()) ) {
-			add_action('bp_setup_nav', function() {
+			/* add_action('bp_setup_nav', function() {
 				if ( ! is_user_logged_in() || bp_is_group() || ! get_userdata( bp_displayed_user_id() ) ) {
 			        return;
 			    }
@@ -187,10 +187,10 @@ if( function_exists( 'buddypress' ) ) {
 						)
 					);
 				}
-			}, 999);
+			}, 999); */
 		}
 		if( is_numeric(bp_displayed_user_id()) ) {
-			add_action('bp_setup_nav', function() {
+			/* add_action('bp_setup_nav', function() {
 				if ( !is_user_logged_in() || bp_is_group() || !get_userdata( bp_displayed_user_id() ) ) {
 			        return;
 			    }
@@ -210,10 +210,10 @@ if( function_exists( 'buddypress' ) ) {
 						)
 					);
 				}
-			}, 999);
+			}, 999); */
 		}
 		if( is_numeric(bp_displayed_user_id()) ) {
-			add_action('bp_setup_nav', function() {
+			/* add_action('bp_setup_nav', function() {
 				if ( ! is_user_logged_in() || bp_is_group() || ! get_userdata( bp_displayed_user_id() ) ) {
 			        return;
 			    }
@@ -234,7 +234,7 @@ if( function_exists( 'buddypress' ) ) {
 						)
 					);
 				}
-			}, 999);
+			}, 999); */
 		}
 		add_action( 'bp_profile_header_meta', function() {
 			$wpchats = new wpchats;

@@ -48,12 +48,15 @@
 								if (is_user_logged_in ()){
 									$user=wp_get_current_user();
 									$name=$user->display_name;
-									echo 'Welcome, '.$name.'!<br>';
-									echo '<a style="font-size:14px" href="./logout">Log Out</a>';
+									
+									// Hidden previous login button
+									//echo '<label style="font-size:14px;">Welcome, '.$name.'!</label><br>';
+									//echo '<a style="font-size:14px;margin-top:5px;" href="./logout"><button style="width:70px;background:#42b3e5;color:#FFF;">Log Out</button></a>';
 								}
 								else{
-									echo '<a style="font-size:14px" href="./membership-login/">Log In</a>';
-									echo '<a style="font-size:14px" href="./membership-registration/">Register</a>'; 
+									// Button Customize
+									echo '<a style="font-size:14px;width:70px;" href="http://health-connect-dev.australiasoutheast.cloudapp.azure.com/wordpress/membership-login/"><button onmouseover="this.style.background=\'#208fbf\'" onmouseout="this.style.background=\'#42b3e5\';" style="width:70px;background:#42b3e5;color:#FFF;text-decoration:none;border:none;">Log In</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+									echo '<a style="font-size:14px;margin-top:5px;width:70px;" href="http://health-connect-dev.australiasoutheast.cloudapp.azure.com/wordpress/membership-registration/"><button onmouseover="this.style.background=\'#208fbf\'" onmouseout="this.style.background=\'#42b3e5\';" style="width:70px;background:#42b3e5;color:#FFF;text-decoration:none;border:none;">Register</button></a><br>'; 
 								}
 
 								/* if ( get_theme_mod( 'medica_lite_general_contactinfo_telephonenumber', '+1 223 456 23' ) ) {
@@ -79,6 +82,8 @@
 									if ( get_theme_mod( 'medica_lite_general_socialslink_linkedinlink', 'http://www.linkedin.com' ) ) {
 										echo '<li class="header-linkedin-icon"><a href="'. esc_url( get_theme_mod( 'medica_lite_general_socialslink_linkedinlink', 'http://www.linkedin.com' ) ) .'" title="'. __( 'Instagram', 'medica-lite' ) .'" target="_blank"></a></li>';
 									}
+									echo '<li class="header-fliker-icon"><a href="https://www.flickr.com/photos/142164998@N08/" target="_blank"></a></li>';
+									echo '<li class="header-pin-icon"><a href="https://au.pinterest.com/healthconnect20/" target="_blank"></a></li>';
 									?>
 								</ul>
 							</div><!--/div .header-contact-->
@@ -95,6 +100,8 @@
 									'container_class'	=> ''
 								)
 							);
+							
+						
 							?>
 						</div><!--/.navigation-menu-->
 						</div>

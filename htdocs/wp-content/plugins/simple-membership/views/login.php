@@ -26,9 +26,9 @@ $join_url = $setting->get_value('join-us-page-url');
             <div class="swpm-login-submit">
                 <input type="submit" class="swpm-login-form-submit" name="swpm-login" value="<?php echo SwpmUtils::_('Login') ?>"/>
             </div>
-            <!--<div class="swpm-forgot-pass-link">
+            <div class="swpm-forgot-pass-link">
                 <a id="forgot_pass" class="swpm-login-form-pw-reset-link"  href="<?php echo $password_reset_url; ?>"><?php echo SwpmUtils::_('Forgot Password') ?>?</a>
-            </div>-->
+            </div>
             <div class="swpm-join-us-link">
                 <a id="register" class="swpm-login-form-register-link" href="http://health-connect-dev.australiasoutheast.cloudapp.azure.com/wordpress/membership-join/membership-registration/"><?php echo SwpmUtils::_('Join Us') ?></a>
             </div>

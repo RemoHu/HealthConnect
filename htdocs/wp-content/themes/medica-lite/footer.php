@@ -105,10 +105,10 @@
 			</div><!--/div .wrapper-->
 			<div class="copyright-name">
 				<div class="wrapper">
-					<?php echo htmlspecialchars_decode( get_theme_mod( 'medica_lite_general_footer_copyrightentry', 'Copyright' ) ); ?> &copy; 2016&nbsp;<a href="#" target="_blank" rel="nofollow"><?php _e( 'RaasoTech', 'medica-lite' ); ?></a> .
+					<?php echo htmlspecialchars_decode( get_theme_mod( 'medica_lite_general_footer_copyrightentry', 'Copyright' ) ); ?> &copy; 2016&nbsp;RaasoTech &nbsp;
 					&nbsp;&nbsp;<a href="http://health-connect-dev.australiasoutheast.cloudapp.azure.com/wordpress/privacy.html" target="_blank" rel="nofollow">Privacy</a>
 					&nbsp;&nbsp;<a href="http://health-connect-dev.australiasoutheast.cloudapp.azure.com/wordpress/terms.html" target="_blank" rel="nofollow">Terms of Use</a>
-					&nbsp;&nbsp;<a href="./contact-us" target="_blank">Contact Us</a>
+					&nbsp;&nbsp;<a href="http://health-connect-dev.australiasoutheast.cloudapp.azure.com/wordpress/contact-us" target="_blank">Contact Us</a>
 				</div><!--/div .wrapper-->
 			</div><!-- /div .copyright-name -->
 		</footer><!--/footer #footer-->

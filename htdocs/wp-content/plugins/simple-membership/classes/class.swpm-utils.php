@@ -1,5 +1,8 @@
 <?php
 
+//include_once('./wp-content/plugins/buddypress/bp-xprofile/classes/class-bp-xprofile-profiledata.php');
+
+
 abstract class SwpmUtils {
 
     public static function is_ajax() {
@@ -264,6 +267,14 @@ abstract class SwpmUtils {
         if (!in_array('administrator', $user_cap)) {
             SwpmUtils::update_wp_user_Role($wp_user_id, $wp_user_data['role']);
         }
+		
+		// Add Extra Field
+		global $wpdb;
+		$table_name = $wpdb->prefix . "bp_xprofile_data";
+		$wpdb->insert($table_name, array('field_id' => 2, 'user_id' => $wp_user_id, 'value' => $wp_user_data['first_name']) ); 
+		
+		//BP_XProfile_ProfileData::save();
+		
         return $wp_user_id;
     }
 
