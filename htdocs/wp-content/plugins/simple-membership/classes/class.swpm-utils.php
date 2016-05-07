@@ -269,9 +269,9 @@ abstract class SwpmUtils {
         }
 		
 		// Add Extra Field
-		global $wpdb;
+/* 		global $wpdb;
 		$table_name = $wpdb->prefix . "bp_xprofile_data";
-		$wpdb->insert($table_name, array('field_id' => 2, 'user_id' => $wp_user_id, 'value' => $wp_user_data['first_name']) ); 
+		$wpdb->insert($table_name, array('field_id' => 2, 'user_id' => $wp_user_id, 'value' => $wp_user_data['first_name']) );  */
 		
 		//BP_XProfile_ProfileData::save();
 		

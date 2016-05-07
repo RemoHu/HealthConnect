@@ -27,33 +27,33 @@
 		</td>
 	</tr>
 	<tr>
-		<th scope="row"><label for="phone"><?php echo  SwpmUtils::_('Phone') ?> </label></th>
+		<th scope="row"><label for="phone">Birth Year </label></th>
 		<td><input class="regular-text" name="phone" type="text" id="phone" value="<?php echo esc_attr($phone); ?>" /></td>
 	</tr>
 	<tr>
-		<th scope="row"><label for="address_street"><?php echo  SwpmUtils::_('Street') ?> </label></th>
+		<th scope="row"><label for="address_street">Ailment 1 </label></th>
 		<td><input class="regular-text" name="address_street" type="text" id="address_street" value="<?php echo esc_attr($address_street); ?>" /></td>
 	</tr>
 	<tr>
-		<th scope="row"><label for="address_city"><?php echo  SwpmUtils::_('City') ?> </label></th>
+		<th scope="row"><label for="address_city">Ailment 2 </label></th>
 		<td><input class="regular-text" name="address_city" type="text" id="address_city" value="<?php echo esc_attr($address_city); ?>" /></td>
 	</tr>
 	<tr>
-		<th scope="row"><label for="address_state"><?php echo  SwpmUtils::_('State') ?> </label></th>
+		<th scope="row"><label for="address_state">Ailment 3 </label></th>
 		<td><input class="regular-text" name="address_state" type="text" id="address_state" value="<?php echo esc_attr($address_state); ?>" /></td>
 	</tr>
 	<tr>
-		<th scope="row"><label for="address_zipcode"><?php echo  SwpmUtils::_('Zipcode') ?> </label></th>
+		<th scope="row"><label for="address_zipcode">Ailment 4 </label></th>
 		<td><input class="regular-text" name="address_zipcode" type="text" id="address_zipcode" value="<?php echo esc_attr($address_zipcode); ?>" /></td>
 	</tr>
 	<tr>
-		<th scope="row"><label for="country"><?php echo  SwpmUtils::_('Country') ?> </label></th>
+		<th scope="row"><label for="company_name">Ailment 5</label></th>
+		<td><input name="company_name" type="text" id="company_name" class="code regular-text" value="<?php echo esc_attr($company_name); ?>" /></td>
+	</tr>   
+	<tr>
+		<th scope="row"><label for="country">Territory </label></th>
 		<td><input class="regular-text" name="country" type="text" id="country" value="<?php echo esc_attr($country); ?>" /></td>
 	</tr>
-	<tr>
-		<th scope="row"><label for="company_name"><?php echo  SwpmUtils::_('Company') ?></label></th>
-		<td><input name="company_name" type="text" id="company_name" class="code regular-text" value="<?php echo esc_attr($company_name); ?>" /></td>
-	</tr>      
 	<tr>
 		<th scope="row"><label for="member_since"><?php echo  SwpmUtils::_('Member Since') ?> </label></th>
 		<td><input class="regular-text" name="member_since" type="text" id="member_since" value="<?php echo esc_attr($member_since); ?>" /></td>

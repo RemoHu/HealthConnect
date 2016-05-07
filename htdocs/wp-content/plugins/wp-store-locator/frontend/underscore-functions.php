@@ -29,7 +29,7 @@ function wpsl_create_underscore_templates( $template ) {
         $info_window_template .= "\t\t" . '<span><strong>' . esc_html( $wpsl->i18n->get_translation( 'phone_label', __( 'Phone', 'wpsl' ) ) ) . '</strong>: <%= formatPhoneNumber( phone ) %></span>' . "\r\n";
         $info_window_template .= "\t\t" . '<% } %>' . "\r\n";
         $info_window_template .= "\t\t" . '<% if ( fax ) { %>' . "\r\n";
-        $info_window_template .= "\t\t" . '<span><strong>' . esc_html( $wpsl->i18n->get_translation( 'fax_label', __( 'Fax', 'wpsl' ) ) ) . '</strong>: <%= fax %></span>' . "\r\n";
+        $info_window_template .= "\t\t" . '<span><strong>' . esc_html( $wpsl->i18n->get_translation( 'fax_label', __( 'Beds', 'wpsl' ) ) ) . '</strong>: <%= fax %></span>' . "\r\n";
         $info_window_template .= "\t\t" . '<% } %>' . "\r\n";
         $info_window_template .= "\t\t" . '<% if ( email ) { %>' . "\r\n";
         $info_window_template .= "\t\t" . '<span><strong>' . esc_html( $wpsl->i18n->get_translation( 'email_label', __( 'Email', 'wpsl' ) ) ) . '</strong>: <%= email %></span>' . "\r\n";

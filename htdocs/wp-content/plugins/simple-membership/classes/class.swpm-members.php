@@ -17,8 +17,8 @@ class SwpmMembers extends WP_List_Table {
             'cb' => '<input type="checkbox" />'
             , 'member_id' => SwpmUtils::_('ID')
             , 'user_name' => SwpmUtils::_('Username')
-            , 'first_name' => SwpmUtils::_('Aliment')
-            , 'last_name' => SwpmUtils::_('Age Group')
+            , 'first_name' => SwpmUtils::_('First Name')
+            , 'last_name' => SwpmUtils::_('Last Name')
             , 'email' => SwpmUtils::_('Email')
             , 'alias' => SwpmUtils::_('Membership Level')
             , 'subscription_starts' => SwpmUtils::_('Access Starts')
